@@ -21,9 +21,9 @@
     .input-wrapper {
       display: flex;
       align-items: center;
-      background-color: #3E4365;
+      background-color: #808080;
       border: none;
-      border-radius: 20px;
+      border-radius: 10px;
       padding: 10px 20px;
       width: 350px;
       height: 40px;
@@ -34,18 +34,18 @@
     .input-wrapper input {
       background: transparent;
       border: none;
-      color: #D4D9F8;
+      color: #fff;
       outline: none;
       width: 100%;
-      font-size: 15px;
+      font-size: 14px;
       font-family: 'Poppins', sans-serif;
-      font-weight: 600;
+      font-weight: bold;
       font-style: italic;
       text-transform: uppercase;
     }
 
     .input-wrapper input::placeholder {
-      color: #D4D9F8;
+      color: #fff;
     }
 
     .input-wrapper .icon {
@@ -57,18 +57,18 @@
     /* Hover state */
     .input-wrapper:hover {
       border: 2px solid #0A9FD6;
-      box-shadow: 0 0 5px rgba(10, 159, 214, 0.5);
+      box-shadow: 0 0 6px 2px rgba(10, 159, 214, 0.6); /* tăng glow ~20% */
     }
 
     /* Focus state */
     .input-wrapper:focus-within {
       border: 2px solid #0A9FD6;
-      box-shadow: 0 0 8px rgba(10, 159, 214, 0.7);
+      box-shadow: 0 0 10px 3px rgba(10, 159, 214, 0.84); /* tăng glow ~20% */
     }
 
     /* Disabled */
     .input-wrapper.disabled {
-      background-color: #363C47;
+      background-color: #8c8c8c; /* sáng hơn #808080 khoảng 5% */
       border-color: transparent;
       opacity: 0.5;
       pointer-events: none;
