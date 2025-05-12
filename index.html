@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Input States</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #000000;
+      font-family: sans-serif;
+      color: #ffffff;
+      padding: 40px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      background-color: #3E4365;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      width: 350px;
+      height: 40px;
+      transition: all 0.3s ease;
+      margin-bottom: 30px;
+    }
+
+    .input-wrapper input {
+      background: transparent;
+      border: none;
+      color: #D4D9F8;
+      outline: none;
+      width: 100%;
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+
+    .input-wrapper input::placeholder {
+      color: #D4D9F8;
+    }
+
+    .input-wrapper .icon {
+      margin-left: 10px;
+      font-size: 16px;
+      color: #7a88a8;
+    }
+
+    /* Hover state */
+    .input-wrapper:hover {
+      border: 2px solid #0A9FD6;
+      box-shadow: 0 0 5px rgba(10, 159, 214, 0.5);
+    }
+
+    /* Focus state */
+    .input-wrapper:focus-within {
+      border: 2px solid #0A9FD6;
+      box-shadow: 0 0 8px rgba(10, 159, 214, 0.7);
+    }
+
+    /* Disabled */
+    .input-wrapper.disabled {
+      background-color: #363C47;
+      border-color: transparent;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Default</h2>
+  <div class="input-wrapper">
+    <input type="text" placeholder="Search..." />
+  </div>
+
+  <h2>2. Hover</h2>
+  <div class="input-wrapper">
+    <input type="text" placeholder="Search..." />
+  </div>
+
+  <h2>3. Focus</h2>
+  <div class="input-wrapper">
+    <input type="text" placeholder="Search..." />
+  </div>
+
+  <h2>4. Disabled</h2>
+  <div class="input-wrapper disabled">
+    <input type="text" placeholder="Search..." disabled />
+  </div>
+
+</body>
+</html>
